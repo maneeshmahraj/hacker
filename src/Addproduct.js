@@ -39,7 +39,14 @@ const Addproduct = () => {
         )
      })
    //  console.log(data);
-   
+   const handleDel=(i)=>{
+    let index=i;
+    let copyData=[...data];
+    const newData=copyData.filter((item,i)=>i!==index);
+    setData(newData)
+    
+    
+   }
   return (
    <>
    <div className='input-item'>
@@ -54,7 +61,7 @@ const Addproduct = () => {
      
    </div>
    <div style={{display:"flex"}}>
-   <List data={data} />
+   <List data={data} handleDel={handleDel} />
    <Search data={data}/>
    </div>
    </>

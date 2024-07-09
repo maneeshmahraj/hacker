@@ -51,8 +51,8 @@ const Addproduct = () => {
    <>
    <div className='input-item'>
     <div className='items-ad'>
-        <input type='text' name='pname' value={mydata.pname} onChange={handleInput}/>
-        <input type='text' name='price' value={mydata.price} onChange={handleInput}  style={{marginLeft:'10px'}}/>
+        <input type='text' name='pname' value={mydata.pname} onChange={handleInput} />
+        <input type='text' name='price' value={mydata.price} onChange={handleInput}  style={{marginLeft:'10px'}} />
     </div>
     <br/>
     <div className='items-add'>
